@@ -8,7 +8,7 @@
     <meta name="description" content="Plataforma de Treinamento Corporativo VeloAcademy. Cursos online para desenvolvimento profissional.">
     <meta name="keywords" content="treinamento, cursos online, desenvolvimento profissional, VeloAcademy, plataforma de treinamento">
 
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
@@ -34,15 +34,21 @@
     </header>
 
     <main>
-        <div class="container main-container">
-            <div id="dashboard-view" class="view active">
-                <h1>Cursos Disponíveis</h1>
-                <div id="courses-grid"></div>
-            </div>
-            <div id="course-view" class="view">
-                </div>
+    <div class="container main-container">
+        <div id="dashboard-view" class="view active">
+            <h1>Cursos Disponíveis</h1>
+            <div id="courses-grid"></div>
         </div>
-    </main>
+        <div id="course-view" class="view">
+            </div>
+
+        <div id="quiz-view" class="view">
+            </div>
+        <div id="certificate-view" class="view">
+            </div>
+
+    </div>
+</main>
 
     <footer>
         <div class="container">
@@ -51,6 +57,18 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
 
+    <div id="name-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2>Gerar Certificado</h2>
+            <p>Por favor, digite seu nome completo como deve aparecer no certificado.</p>
+            <input type="text" id="student-name-input" placeholder="Seu nome completo">
+            <div class="modal-actions">
+                <button id="modal-cancel-btn" class="btn btn-secondary">Cancelar</button>
+                <button id="modal-confirm-btn" class="btn">Gerar Certificado</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>
