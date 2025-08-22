@@ -2,7 +2,7 @@ const veloAcademyApp = {
     courseDatabase: {},
 
     // ❗❗❗ IMPORTANTE: COLE A URL DO SEU APP DA WEB AQUI ❗❗❗
-    SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzfsAG8tTRtL-q8TC_qo_sO63zsUVm08RWTrur5t80PXHw0c9ArPOAhE34ffhnw9dAI/exec",
+    SCRIPT_URL: "https://script.google.com/macros/s/AKfycbw3LfkmU0HN2_nnWuaJoSyhIAZ_TZBg30Qb52UGf_vXA2PdnW7ccCS2SeYn_Fh5JEYv/exec",
 
     init() {
         this.loadCourses();
@@ -239,3 +239,4 @@ const veloAcademyApp = {
 document.addEventListener('DOMContentLoaded', () => {
     veloAcademyApp.init();
 });
+
